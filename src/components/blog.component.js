@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect } from 'react';
-
+import Comment from './comment.component';
 const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts/1';
 
 const INITIAL_STATE = {
@@ -51,6 +51,7 @@ function Blog() {
         : <div>
           <h1>{blogPost.data.title}</h1>
           <div>{blogPost.data.body}</div>
+          <Comment />
         </div> }
     </div>
   )
