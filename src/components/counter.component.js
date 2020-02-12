@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 
 function Counter({ title }) {
 
   const [ counter, setCounter] = useState(0);
 
-  const incrementCounter = () => {
+  const incrementCounter = useCallback( () => {
     setCounter(counter + 1);
-  };
+  }, [counter]);
 
   return (
     <div>
