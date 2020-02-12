@@ -3,6 +3,8 @@ import './App.css';
 
 import Blog from './components/blog.component';
 
+export const UserContext = React.createContext('');
+
 function App() {
 
   const [ userName, setUserName] = useState('');
@@ -13,7 +15,10 @@ function App() {
         {userName ? `Użytkownik zalogowany jako: ${userName}` : 'Użytkownik niezalogowany!'}
         {!userName ? <button onClick={() => setUserName('kaj.bialas@leocode.com')}>Zaloguj</button> : null}
       </div>
-      <Blog />
+
+      <UserContext.Provider value={userName}>
+        <Blog />
+      </UserContext.Provider>
     </div>
   );
 }
