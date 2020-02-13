@@ -1,9 +1,18 @@
 # Leocode Webinar: React Hooks Advanced
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is repository with code using on webinar demos. You can find all examples with start and final code.
+
 ## Branches
 `master` - default empty branch.<br/>
+`issue0` - start branch with case about `useCallback()`<br/>
+`issue0-final` - final branch with case about `useCallback()`<br/>
+`issue1` - start branch with case about `useContext()`<br/>
+`issue1-final` - final branch with case about `useContext()`<br/>
+`issue2` - start branch with case about `useReducer()`<br/>
+`issue2-final` - final branch with case about `useReducer()`<br/>
 
 
+## Boilerplate
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
